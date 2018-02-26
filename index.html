@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+</head>
+
+<body background="./assets/images/catBackground.jpg"></body>
+
+
+<div class="grid hidden">
+    <div class="grid-container" id="top">
+        <div class="startBox">
+            <div class="instructions">
+                <h1>Time to Play Cat Trivia!!!</h1>
+                <h2>Instructions: You will have one minute to complete 5 cat related trivia questions. You can either click the
+                    "Finished" button when you have completed all questions or wait for the timer to end. You must answer
+                    all questions correctly to win!
+                </h2>
+            </div>
+            <div class="button">
+                <button id="meowButton" onClick="meowClick()" onmouseover="this.style.color='white'" onmouseleave="this.style.color='pink'">Meow</button>
+            </div>
+            <h3>Press the "Meow" button when you are ready to begin!
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="grid1">
+<div id="middle">
+    <div class="trivia box">
+        <div>
+            <h1>Trivia Questions</h1>
+
+        </div>
+        <form>
+            <ol>
+                <li>
+                    Cats have fewer teeth than dogs?
+                    <input type="radio" value="true"> True
+                    <input type="radio" value="false"> False
+                </li>
+                <li>
+                    A cat can jump up to 6 times its own length?
+                    <input type="radio" value="true"> True
+                    <input type="radio" value="false"> False
+                </li>
+                <li>
+                    A group of unrelated kittens is called a clowder?
+                    <input type="radio" value="true"> True
+                    <input type="radio" value="false"> False
+                </li>
+                <li>
+                    Most cats have 18 claws?
+                    <input type="radio" value="true"> True
+                    <input type="radio" value="false"> False
+                </li>
+                <li>
+                    Cats can't taste sweet?
+                    <input type="radio" value="true"> True
+                    <input type="radio" value="false"> False
+                </li>
+            </ol>
+        </form>
+
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" id="catSign1">
+            <img id="catSign" src="./assets/images/catSign.jpg" />
+            <div id="littleTimer">00:00</div>
+        </div>
+
+        <div class="button grid-item" id="finishedButton">
+            <button onclick="finished" id="finished">
+                Finished</button>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="grid2 hidden">
+    <div class="winner">
+        <img id="winlose" src="./assets/images/win.jpg" />
+        <h3 id="youWin">You love cats!</h3>
+    </div>
+    <div class="loser hidden">
+        <img id="winlose" src="./assets/images/lose.gif" />
+        <h3 id="youWin">You hate cats!</h3>
+    </div>
+</div>
+
+
+</div>
+
+<script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>

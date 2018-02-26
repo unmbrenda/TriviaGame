@@ -1,0 +1,116 @@
+body{
+    font-family: 'Shadows Into Light Two', cursive;
+    color:  rgb(143, 155, 143);
+    font-weight: bold;
+}
+.grid{
+    height: 500px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 55px;
+   background-color: rgb(247, 215, 220);
+   border-style:double;
+   border-width: 5px;
+   border-color: white; 
+   
+}
+.grid1{
+    height: 500px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 55px;
+   background-color: rgb(247, 215, 220);
+   border-style:double;
+   border-width: 5px;
+   border-color: white; 
+}
+.grid2{
+    height: 500px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 55px;
+   background-color: rgb(247, 215, 220);
+   border-style:double;
+   border-width: 5px;
+   border-color: white; 
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: auto auto;
+}
+.grid-item{
+    width: 340px;
+}
+#finished{
+    margin-top:40px;
+    margin-left:40px;
+}
+#meowButton{
+    width: 150px;
+    height: 150px;
+    font-size: 30pt;
+    background-color: rgb(143, 155, 143);
+    border-radius: 50%;
+}
+.button{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-top:25px;
+}
+.hidden{
+    display:none;
+}
+ol{
+    font-size: 18pt;
+}
+#catSign{
+    height:175px;
+    width:175px;
+    margin-left:100px;
+    border-style:double;
+    border-color: darkcyan;
+    position:relative;
+}
+#finishedButton{
+       margin-top:30px;
+}
+#finished{
+    border-radius:100%;
+    height:50px;
+    width:150px;
+    border-style:solid 5px black;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:20pt;
+    background-color: #f59f8b;
+}
+#littleTimer{
+    height:5px;
+    width:5px;
+    position:absolute;
+   font-size:15pt;
+    top: 404px;
+    right: 770px;
+}
+#youWin{
+    font-size:40pt;
+}
+
+#winlose{
+    height:300px;
+    width:350px;
+margin-top:100px;
+    margin-left: 175px;
+}
+
