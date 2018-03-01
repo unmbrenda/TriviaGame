@@ -101,7 +101,7 @@ ol{
     position:absolute;
    font-size:15pt;
     top: 404px;
-    right: 770px;
+    right: 765px;
 }
 #youWin{
     font-size:40pt;
@@ -113,4 +113,14 @@ ol{
 margin-top:100px;
     margin-left: 175px;
 }
-
+.grid3{
+    height: 500px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 55px;
+   background-color: rgb(247, 215, 220);
+   border-style:double;
+   border-width: 5px;
+   border-color: white; 
+}

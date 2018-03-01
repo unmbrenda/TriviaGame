@@ -14,12 +14,12 @@
 <body background="./assets/images/catBackground.jpg"></body>
 
 
-<div class="grid hidden">
+<div class="grid">
     <div class="grid-container" id="top">
         <div class="startBox">
             <div class="instructions">
                 <h1>Time to Play Cat Trivia!!!</h1>
-                <h2>Instructions: You will have one minute to complete 5 cat related trivia questions. You can either click the
+                <h2>Instructions: You will have 60 seconds to complete 5 cat related trivia questions. You can either click the
                     "Finished" button when you have completed all questions or wait for the timer to end. You must answer
                     all questions correctly to win!
                 </h2>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-<div class="grid1">
+<div class="grid1 hidden">
 <div id="middle">
     <div class="trivia box">
         <div>
@@ -43,28 +43,28 @@
             <ol>
                 <li>
                     Cats have fewer teeth than dogs?
-                    <input type="radio" value="true"> True
-                    <input type="radio" value="false"> False
+                    <input type="radio" value="1" id="question1">True
+                    <input type="radio" value="0">False
                 </li>
                 <li>
                     A cat can jump up to 6 times its own length?
-                    <input type="radio" value="true"> True
-                    <input type="radio" value="false"> False
+                    <input type="radio" value="1" id="question2"> True
+                    <input type="radio" value="0" > False
                 </li>
                 <li>
                     A group of unrelated kittens is called a clowder?
-                    <input type="radio" value="true"> True
-                    <input type="radio" value="false"> False
+                    <input type="radio" value="1" id="question3"> True
+                    <input type="radio" value="0" > False
                 </li>
                 <li>
                     Most cats have 18 claws?
-                    <input type="radio" value="true"> True
-                    <input type="radio" value="false"> False
+                    <input type="radio" value="1" id="question4"> True
+                    <input type="radio" value="0" > False
                 </li>
                 <li>
                     Cats can't taste sweet?
-                    <input type="radio" value="true"> True
-                    <input type="radio" value="false"> False
+                    <input type="radio" value="1" id="question5"> True
+                    <input type="radio" value="0" > False
                 </li>
             </ol>
         </form>
@@ -77,7 +77,7 @@
         </div>
 
         <div class="button grid-item" id="finishedButton">
-            <button onclick="finished" id="finished">
+            <button onclick="finished()" id="finished">
                 Finished</button>
 
         </div>
@@ -92,7 +92,9 @@
         <img id="winlose" src="./assets/images/win.jpg" />
         <h3 id="youWin">You love cats!</h3>
     </div>
-    <div class="loser hidden">
+</div>
+<div class="grid3">
+    <div class="loser">
         <img id="winlose" src="./assets/images/lose.gif" />
         <h3 id="youWin">You hate cats!</h3>
     </div>
